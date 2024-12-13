@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index10</title>
+	<script>
+		function timeDifference() {
+            let hrs1 = parseInt(prompt("Введите часы для первой даты: "));
+            let min1 = parseInt(prompt("Введите минуты для первой даты: "));
+            let sec1 = parseInt(prompt("Введите секунды для первой даты: "));
+            let hrs2 = parseInt(prompt("Введите часы для второй даты: "));
+            let min2 = parseInt(prompt("Введите минуты для второй даты: "));
+            let sec2 = parseInt(prompt("Введите секунды для второй даты: "));
+            let date1ToSeconds = (hrs1 * 3600) + (min1 * 60) + sec1;
+            let date2ToSeconds = (hrs2 * 3600) + (min2 * 60) + sec2;
+            let differenceInSeconds = Math.abs(date1ToSeconds - date2ToSeconds);
+            let hrs = Math.floor(differenceInSeconds / 3600);
+            differenceInSeconds %= 3600;
+            let min = Math.floor(differenceInSeconds / 60);
+            differenceInSeconds %= 60;
+            let sec = differenceInSeconds;
+            if (hrs < 10) hrs = '0' + hrs;
+            if (min < 10) min = '0' + min;
+            if (sec < 10) sec = '0' + sec;
+            return hrs + ':' + min + ':' + sec;
+        }
+	</script>
+</head>
+<body>
+	<script>
+		alert(timeDifference());
+	</script>
+</body>
+</html>

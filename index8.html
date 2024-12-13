@@ -1,0 +1,34 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index8</title>
+    <script>
+        function timeInSeconds(hrs, min, sec) 
+        {
+        if (!hrs) 
+            {
+                hrs = 0;
+            }
+        if (!min) 
+            {
+                min = 0;
+            }
+        if (!sec) 
+            {
+                sec = 0;
+            }
+        return (hrs * 3600) + (min * 60) + sec;
+        }
+    </script>
+    </head>
+<body>
+    <script>
+        let hrs = parseFloat(prompt("Введите часы: "));
+        let min = parseFloat(prompt("Введите минуты: "));
+        let sec = parseFloat(prompt("Введите секунды: "));
+        document.write(timeInSeconds(hrs, min, sec));
+    </script>
+</body>
+</html>

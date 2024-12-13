@@ -1,0 +1,35 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index7</title>
+    <script>
+        function clock() 
+        {
+            let hours = prompt("Введите часы: ");
+            let minutes = prompt("Введите минуты: ");
+            let seconds = prompt("Введите секунды: ");
+            if (!hours) 
+            {
+                hours = "00";
+            }
+            if (!minutes) 
+            {
+                minutes = "00";
+            }
+            if (!seconds) 
+            {
+                seconds = "00";
+            }
+            let time = hours + ":" + minutes + ":" + seconds;
+            alert(time);
+        }
+    </script>
+    </head>
+<body>
+    <script>
+        clock();
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index6</title>
+	<script>
+		function perfectNum(number)
+        {
+            let sum = 0;
+            for (let i = 1; i < number; i++)
+            {
+                if (number % i === 0) 
+                {
+                    sum += i;
+                }
+            }
+            return sum === number;
+        }
+        function printPerfectNum(min, max) 
+        {
+            for (let i = min; i <= max; i++) 
+            {
+                if (perfectNum(i))
+                {
+                    alert(i + " - совершенное число");
+                }
+            }
+        }
+	</script>
+    </head>
+<body>
+    <script>
+    	let min = parseFloat(prompt("№1: "));
+        let max = parseFloat(prompt("№2: "));
+        alert(printPerfectNum(min, max));
+    </script>
+</body>
+</html>

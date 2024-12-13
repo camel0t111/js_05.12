@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index2</title>
+	<script>
+		function factorialCalc(x) 
+        {
+            let factorial = 1;
+            for (let i = 1; i <= x; i++) 
+            {
+                factorial *= i;
+            }
+            return factorial;
+        }
+	</script>
+    </head>
+<body>
+    <script>
+        let num = parseInt(prompt("Введите число для вычисления факториала: "));
+        alert("Факториал числа " + num + " равен " + factorialCalc(num));
+    </script>
+</body>
+</html>

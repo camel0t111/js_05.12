@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index5</title>
+	<script>
+        function perfectNum(num) 
+        {
+            let sum = 0;
+            for (let i = 1; i < num; i++) 
+            {
+                if (num % i === 0)
+                {
+                    sum += i;
+                }
+            }
+            return sum === num;
+        }
+	</script>
+    </head>
+<body>
+    <script>
+        let num = parseFloat(prompt("№1: "));
+        alert(perfectNum(num));
+    </script>
+</body>
+</html>

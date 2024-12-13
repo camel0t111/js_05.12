@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index9</title>
+	<script>
+		function secConvert(seconds) 
+		{
+			let hrs = Math.floor(seconds / 3600);
+			seconds %= 3600;
+			let min = Math.floor(seconds / 60);
+			seconds %= 60;
+			let sec = seconds;
+			if (hrs < 10) 
+			{
+        		hrs = '0' + hrs;
+    		}
+    		if (min < 10) 
+    		{
+        		min = '0' + min;
+    		}
+    		if (sec < 10) 
+    		{
+        		sec = '0' + sec;
+    		}
+    		return hrs + ':' + min + ':' + sec;
+		}
+	</script>
+</head>
+<body>
+	<script>
+		let totalSeconds = parseInt(prompt("Введите секунды: "));
+		alert(secConvert(totalSeconds));
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index4</title>
+	<script>
+		function calcSquare(x, y) 
+        {
+            if (y === null || isNaN(y))
+            {
+                return x * x;
+            } 
+            else
+            {
+                return x * y;
+            }
+        }
+	</script>
+</head>
+<body>
+	<script>
+		let x = parseFloat(prompt("Первая сторона: "));
+        let y = parseFloat(prompt("Вторая сторона: "));
+        alert(calcSquare(x, y));
+	</script>
+</body>
+</html>
